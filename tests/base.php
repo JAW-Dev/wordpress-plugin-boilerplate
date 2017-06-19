@@ -9,6 +9,10 @@
  * @license    GNU General Public License v2 or later
  * @version    {{plugin-version}}
  */
+
+/**
+ * Base
+ */
 abstract class Base_UnitTestCase extends WP_UnitTestCase {
 
 	/**
