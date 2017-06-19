@@ -30,8 +30,8 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 	/**
 	 * Name
 	 *
-	 * @author {{theme-author}}
-	 * @since  {{theme-version}}
+	 * @author {{plugin-author}}
+	 * @since  {{plugin-version}}
 	 */
 	class Plugin_Class {
 
@@ -62,8 +62,8 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 		/**
 		 * Initialize the class
 		 *
-		 * @author {{theme-author}}
-		 * @since  {{theme-version}}
+		 * @author {{plugin-author}}
+		 * @since  {{plugin-version}}
 		 *
 		 * @return void
 		 */
@@ -74,8 +74,8 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 		/**
 		 * Init
 		 *
-		 * @author {{theme-author}}
-		 * @since  {{theme-version}}
+		 * @author {{plugin-author}}
+		 * @since  {{plugin-version}}
 		 *
 		 * @return void
 		 */
@@ -88,8 +88,8 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 		/**
 		 * Activate the plugin.
 		 *
-		 * @author {{theme-author}}
-		 * @since  {{theme-version}}
+		 * @author {{plugin-author}}
+		 * @since  {{plugin-version}}
 		 *
 		 * @return void
 		 */
@@ -102,8 +102,8 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 		 * Deactivate the plugin.
 		 * Uninstall routines should be in uninstall.php.
 		 *
-		 * @author {{theme-author}}
-		 * @since  {{theme-version}}
+		 * @author {{plugin-author}}
+		 * @since  {{plugin-version}}
 		 *
 		 * @return void
 		 */
@@ -116,8 +116,8 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 /**
  * Return an instance of the plugin class.
  *
- * @author {{theme-author}}
- * @since  {{theme-version}}
+ * @author {{plugin-author}}
+ * @since  {{plugin-version}}
  *
  * @return Singleton instance of plugin class.
  */

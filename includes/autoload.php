@@ -5,7 +5,7 @@
  * @package    {{plugin-package}}
  * @subpackage {{plugin-package}}/Includes
  * @author     {{plugin-author}} <{{plugin-author-email}}>
- * @copyright  Copyright (c) {{year}}, {{theme-author}}
+ * @copyright  Copyright (c) {{year}}, {{plugin-author}}
  * @license    GNU General Public License v2 or later
  * @version    {{plugin-version}}
  */
