@@ -4,10 +4,10 @@
  *
  * @package    {{plugin-package}}
  * @subpackage {{plugin-package}}\Test
- * @author     {{plugin-author}} <{{plugin_author-email}}>
- * @copyright  Copyright (c) {{year}}, {{plugin-author}}
+ * @author     Plugin_Author <Plugin_Author_Email>
+ * @copyright  Copyright (c) 2018, Plugin_Author
  * @license    GNU General Public License v2 or later
- * @version    {{plugin-version}}
+ * @version    1.0.0
  */
 
 /**

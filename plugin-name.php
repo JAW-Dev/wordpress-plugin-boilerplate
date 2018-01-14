@@ -1,55 +1,64 @@
 <?php
 /**
- * Plugin Name: {{plugin_name}}
- * Plugin URI:  {{plugin-uri}}
- * Description: {{plugin-description}}
- * Version:     {{plugin-version}}
- * Author:      {{plugin-author}}
- * Author URI:  {{plugin-author-uri}}
- * Donate link: {{plugin-donation-link}}
+ * Plugin_Name
+ * Plugin_URI
+ * Plugin_Description
+ * Plugin_Package
+ * plugin_function
+ * Plugin_TextDomain
+ * Plugin_Author
+ * Plugin_Author_URL
+ * Plugin_Author_Email
+ *
+ * Plugin Name: Plugin_Name
+ * Plugin URI:  Plugin_URI
+ * Description: Plugin_Description
+ * Version:     1.0.0
+ * Author:      Plugin_Author
+ * Author URI:  Plugin_Author_URL
  * License:     GPLv2
- * Text Domain: {{plugin-textdomain}}
+ * Text Domain: Plugin_TextDomain
  * Domain Path: /languages
  *
- * @package   {{plugin-package}}
- * @author    {{plugin-author}} <{{plugin_author-email}}>
- * @copyright Copyright (c) {{year}}, {{plugin-author}}
+ * @package   Plugin_Package
+ * @author    Plugin_Author <Plugin_Author_Email>
+ * @copyright Copyright (c) 2018, Plugin_Author
  * @license   GNU General Public License v2 or later
- * @version   {{plugin-version}}
+ * @version   1.0.0
  */
 
-namespace Plugin_Namespace;
+namespace Plugin_Package;
 
 // ==============================================
 // Autoloader
 // ==============================================
 require_once trailingslashit( plugin_dir_path( __FILE__ ) ) . trailingslashit( 'includes' ) . 'autoload.php';
 
-if ( ! class_exists( 'Plugin_Class' ) ) {
+if ( ! class_exists( 'Plugin_Package' ) ) {
 
 	/**
 	 * Name
 	 *
-	 * @author {{plugin-author}}
-	 * @since  {{plugin-version}}
+	 * @author Plugin_Author
+	 * @since  1.0.0
 	 */
-	class Plugin_Class {
+	class Plugin_Package {
 
 		/**
 		 * Singleton instance of plugin.
 		 *
-		 * @var   Plugin_Class
-		 * @since {{plugin-version}}
+		 * @var   static
+		 * @since 1.0.0
 		 */
 		protected static $single_instance = null;
 
 		/**
 		 * Creates or returns an instance of this class.
 		 *
-		 * @author {{plugin-author}}
-		 * @since  {{plugin-version}}
+		 * @author Plugin_Author
+		 * @since  1.0.0
 		 *
-		 * @return A single instance of this class.
+		 * @return static
 		 */
 		public static function get_instance() {
 			if ( null === self::$single_instance ) {
@@ -62,8 +71,8 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 		/**
 		 * Initialize the class
 		 *
-		 * @author {{plugin-author}}
-		 * @since  {{plugin-version}}
+		 * @author Plugin_Author
+		 * @since  1.0.0
 		 *
 		 * @return void
 		 */
@@ -74,22 +83,22 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 		/**
 		 * Init
 		 *
-		 * @author {{plugin-author}}
-		 * @since  {{plugin-version}}
+		 * @author Plugin_Author
+		 * @since  1.0.0
 		 *
 		 * @return void
 		 */
 		public function init() {
 
 			// Load translated strings for plugin.
-			load_plugin_textdomain( '{{plugin-textdomain}}', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+			load_plugin_textdomain( 'Plugin_TextDomain', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 		}
 
 		/**
 		 * Activate the plugin.
 		 *
-		 * @author {{plugin-author}}
-		 * @since  {{plugin-version}}
+		 * @author Plugin_Author
+		 * @since  1.0.0
 		 *
 		 * @return void
 		 */
@@ -102,8 +111,8 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 		 * Deactivate the plugin.
 		 * Uninstall routines should be in uninstall.php.
 		 *
-		 * @author {{plugin-author}}
-		 * @since  {{plugin-version}}
+		 * @author Plugin_Author
+		 * @since  1.0.0
 		 *
 		 * @return void
 		 */
@@ -116,13 +125,13 @@ if ( ! class_exists( 'Plugin_Class' ) ) {
 /**
  * Return an instance of the plugin class.
  *
- * @author {{plugin-author}}
- * @since  {{plugin-version}}
+ * @author Plugin_Author
+ * @since  1.0.0
  *
  * @return Singleton instance of plugin class.
  */
 function plugin_function() {
-	return Plugin_Class::get_instance();
+	return Plugin_Package::get_instance();
 }
 add_action( 'plugins_loaded', array( plugin_function(), 'init' ) );
 

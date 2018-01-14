@@ -1,2 +1,2 @@
-# WordPress Plugin Boilerplate
-A WordPress Plugin Boilerplate
+# Plugin_Name
+Plugin_Description

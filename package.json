@@ -1,8 +1,8 @@
 {
-	"name": "boilerplate",
-	"version": "1.0.5",
-	"description": "A boilerplate.",
-	"main": "Gulpfile.js",
+	"name": "Plugin_Name",
+	"version": "1.0.0",
+	"description": "Plugin_Description",
+	"license": "GNU General Public License v2 or later",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -23,6 +23,7 @@
 		"gulp-cssnano": "latest",
 		"gulp-eslint": "latest",
 		"gulp-imagemin": "latest",
+		"gulp-livereload": "latest",
 		"gulp-notify": "latest",
 		"gulp-plumber": "latest",
 		"gulp-postcss": "latest",
@@ -37,12 +38,9 @@
 		"gulp-util": "latest",
 		"gulp-watch": "latest",
 		"gulp-wp-pot": "latest",
+		"normalize-scss": "latest",
 		"require-dir": "latest",
 		"sass-mq": "latest",
 		"yargs": "latest"
-	},
-	"dependencies": {
-		"gulp-copy": "^1.0.0",
-		"normalize-scss": "latest"
 	}
 }

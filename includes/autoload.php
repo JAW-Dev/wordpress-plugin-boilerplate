@@ -4,20 +4,20 @@
  *
  * @package    {{plugin-package}}
  * @subpackage {{plugin-package}}/Includes
- * @author     {{plugin-author}} <{{plugin-author-email}}>
- * @copyright  Copyright (c) {{year}}, {{plugin-author}}
+ * @author     Plugin_Author <{{plugin-author-email}}>
+ * @copyright  Copyright (c) 2018, Plugin_Author
  * @license    GNU General Public License v2 or later
- * @version    {{plugin-version}}
+ * @version    1.0.0
  */
 
-namespace Plugin_Namespace\Includes;
+namespace Plugin_Package\Includes;
 
 /**
  * Autoloader
  *
  * @param string $class Name of the class being requested.
  *
- * @since {{plugin-version}}
+ * @since 1.0.0
  *
  * @return void
  */

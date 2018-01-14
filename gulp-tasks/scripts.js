@@ -23,6 +23,7 @@ gulp.task( 'concat', () =>
 		.pipe( concat( 'index.js' ) )
 		.pipe( sourcemaps.write() )
 		.pipe( gulp.dest( 'assets/scripts' ) )
+		.pipe( livereload() )
 );
 
 /**
@@ -36,6 +37,7 @@ gulp.task( 'uglify', [ 'concat' ], () =>
 		.pipe( rename({ 'suffix': '.min' }) )
 		.pipe( uglify({ 'mangle': false }) )
 		.pipe( gulp.dest( paths.scripts ) )
+		.pipe( livereload() )
 );
 
 /**

@@ -18,5 +18,5 @@
 
 @mixin font-size($size-value: 1px) {
 	font-size: $size-value;
-	font-size: px-to-rem($size-value);
+	font-size: rem($size-value);
 }

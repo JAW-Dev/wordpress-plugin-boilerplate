@@ -30,10 +30,11 @@ gulp.task( 'compileStyles', [ 'cleanStyles' ], () =>
 		.pipe(
 			postcss([
 				autoprefixer({'browsers': [ 'last 2 version' ]}),
-				mqpacker({'sort': true})
+				mqpacker({'sort': true}),
 			]) )
 		.pipe( sourcemaps.write() )
 		.pipe( gulp.dest( paths.styles ) )
+		.pipe( livereload() )
 	);
 
 /**
@@ -47,6 +48,7 @@ gulp.src( files.styles )
 	.pipe( cssnano({'safe': true, discardComments: {removeAll: true}}) )
 	.pipe( rename( 'style.min.css' ) )
 	.pipe( gulp.dest( paths.styles ) )
+	.pipe( livereload() )
 );
 
 /**
