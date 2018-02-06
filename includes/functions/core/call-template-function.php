@@ -12,6 +12,10 @@
  * @version    1.0.0
  */
 
+if ( ! defined( 'WPINC' ) ) {
+	wp_die( 'No Access Allowed!', 'Error!', array( 'back_link' => true ) );
+}
+ 
 if ( ! function_exists( 'Plugin_TextDomain_call_template_function' ) ) {
 	/**
 	 * Example Function.
