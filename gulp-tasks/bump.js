@@ -49,11 +49,11 @@ gulp.task( 'bump', [ 'packageBump' ], () => {
 			'!package.json',
 			'!./gulp-tasks/bump.js',
 			'./**/*',
-			'./dist'
+			'./dist',
 		];
 	gulp.src( filePaths, {
 		base: './',
-		dot: false
+		dot: false,
 	})
 	.pipe( plumber({'errorHandler': handleErrors}) )
 	.pipe( replace( /@since[ \t]+NEXT/g, '@since ' + pkg.version ) )

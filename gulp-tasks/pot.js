@@ -31,7 +31,7 @@ gulp.task( 'pot', [ 'cleanPot' ], () =>
 		.pipe( sort() )
 		.pipe( wpPot({
 			'domain': domain,
-			'package': domain
+			'package': domain,
 		}) )
 		.pipe( gulp.dest( 'languages/' + domain + '.pot' ) )
 );
