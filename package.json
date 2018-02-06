@@ -1,13 +1,12 @@
 {
 	"name": "Plugin_Name",
+	"author": "Plugin_Author",
 	"version": "1.0.0",
 	"description": "Plugin_Description",
 	"license": "GNU General Public License v2 or later",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "Jason Witt",
-	"license": "GPLv2",
 	"devDependencies": {
 		"autoprefixer": "latest",
 		"babel-core": "latest",
