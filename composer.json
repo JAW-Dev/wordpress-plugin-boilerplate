@@ -1,0 +1,15 @@
+{
+	"name": "Plugin_Name",
+	"description": "Plugin_Description",
+	"license": "GNU General Public License v2 or later",
+	"authors": [
+		{
+			"name": "Plugin_Author",
+			"email": "Plugin_Author_Email"
+		}
+	],
+	"require": {},
+	"require-dev": {
+		"lucatume/wp-browser": "^1.22"
+	}
+}
