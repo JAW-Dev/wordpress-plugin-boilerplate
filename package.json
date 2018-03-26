@@ -1,7 +1,7 @@
 {
-	"name": "name",
-	"author": "author",
-	"description": "description",
+	"name": "Plugin_Name",
+	"author": "Plugin_Author",
+	"description": "Plugin_Description",
 	"version": "1.0.0",
 	"license": "GNU General Public License v2 or later",
 	"main": "gulpfile.js",

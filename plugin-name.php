@@ -9,6 +9,7 @@
  * Plugin_Author
  * Plugin_Author_URL
  * Plugin_Author_Email
+ * Development_URL
  *
  * Plugin Name: Plugin_Name
  * Plugin URI:  Plugin_URI
