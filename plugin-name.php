@@ -134,6 +134,8 @@ if ( ! class_exists( 'Plugin_Package' ) ) {
  * @since  1.0.0
  *
  * @return Singleton instance of plugin class.
+ *
+ * @SuppressWarnings(PHPMD)
  */
 function plugin_function() {
 	return Plugin_Package::get_instance();
