@@ -15,7 +15,7 @@
 if ( ! defined( 'WPINC' ) ) {
 	wp_die( 'No Access Allowed!', 'Error!', array( 'back_link' => true ) );
 }
- 
+
 if ( ! function_exists( 'Plugin_TextDomain_call_template_function' ) ) {
 	/**
 	 * Example Function.
@@ -29,7 +29,7 @@ if ( ! function_exists( 'Plugin_TextDomain_call_template_function' ) ) {
 	 * @return string
 	 */
 	function Plugin_TextDomain_call_template_function( $callback, ...$args ) {
-		$call_template_function = new Plugin_Package\Includes\Classes\Call_Template_Function();
-		return $call_template_function->init( $callback, $args );
+		$template_function = new Plugin_Package\Includes\Classes\Call_Template_Function();
+		return $template_function->init( $callback, $args );
 	}
 }
